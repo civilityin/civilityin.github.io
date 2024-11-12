@@ -1,65 +1,46 @@
-/* About Page Styling */
-#about {
-  background-color: #f7f7f7;
-  color: #333;
-  padding: 80px 20px;
-  text-align: center;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Civil Engineering Helpdesk</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Civil Engineering Helpdesk</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-#about h2 {
-  font-size: 3rem;
-  font-weight: 700;
-  color: #2a5298;
-  margin-bottom: 30px;
-}
+  <section id="contact">
+    <div class="contact-form">
+      <h2>Contact Us</h2>
+      <p>If you have any questions, suggestions, or need advice on a civil engineering project, feel free to reach out. We're here to help!</p>
+      <form action="#">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
 
-.about-content {
-  max-width: 900px;
-  margin: 0 auto;
-}
+        <label for="email">Your Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
 
-.about-details {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 40px;
-}
+        <label for="message">Your Message</label>
+        <textarea id="message" placeholder="Write your message here" required></textarea>
 
-.detail {
-  width: 30%;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-}
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
 
-.detail h3 {
-  font-size: 1.8rem;
-  color: #ffcd02;
-  margin-bottom: 10px;
-}
+  <footer>
+    <p>&copy; 2024 Civil Engineering Helpdesk. All rights reserved.</p>
+  </footer>
 
-.detail p {
-  font-size: 1.2rem;
-  color: #666;
-}
-
-.detail ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-.detail ul li {
-  font-size: 1.2rem;
-  color: #666;
-  margin-bottom: 5px;
-}
-
-footer {
-  background-color: #2a5298;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  margin-top: 50px;
-}
+  <script src="assets/js/scripts.js"></script>
+</body>
+</html>

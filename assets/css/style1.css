@@ -1,0 +1,127 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333333;
+  background-color: #F9F9F9;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #00509E;
+  color: #ffffff;
+}
+
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.navbar .cta-button {
+  background-color: #FF6700;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+/* Header with Background Image */
+.header {
+  background-image: url('../img/construction-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.header-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.header-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta-button.large {
+  padding: 0.75rem 1.5rem;
+}
+
+/* Services Section */
+.services {
+  padding: 4rem 2rem;
+  background-color: #F9F9F9;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.service-card {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  text-align: center;
+  color: #333333;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.service-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.service-card h3 {
+  font-size: 1.5rem;
+  color: #00509E;
+  margin-bottom: 0.5rem;
+}
+
+.service-card p {
+  font-size: 1rem;
+  color: #666666;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: #00509E;
+  color: #ffffff;
+}
+
+.footer-content p {
+  margin-bottom: 0.5rem;
+}
+
+.footer-content .social-links a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+.footer-content .social-links a:hover {
+  color: #FF6700;
+}

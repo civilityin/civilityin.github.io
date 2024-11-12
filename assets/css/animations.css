@@ -1,0 +1,19 @@
+/* Smooth Fade-In */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.header-content {
+  animation: fadeIn 1.5s ease-in;
+}
+
+/* Slide-Up Effect for Service Cards */
+.service-card {
+  animation: slideUp 0.7s ease-in-out;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}

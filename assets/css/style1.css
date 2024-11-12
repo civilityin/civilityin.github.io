@@ -6,45 +6,45 @@
 
 .service-grid {
   display: flex;               /* Flexbox for horizontal layout */
-  justify-content: space-around;  /* Evenly space items */
-  gap: 2rem;                   /* Space between items */
+  justify-content: space-between;  /* Space out items evenly */
+  gap: 1rem;                   /* Space between items */
   flex-wrap: wrap;             /* Allow wrapping to next line if space is tight */
 }
 
 .service-card {
   background: #ffffff;
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   color: #333333;
-  width: 250px;                /* Fix width for each card */
+  width: 120px;                /* Small width for each card */
   transition: transform 0.3s;
 }
 
 .service-card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-5px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Set image size to thumbnail (smaller size) */
+/* Small Thumbnail Image */
 .service-image {
-  width: 120px;               /* Set width to 120px for a thumbnail */
-  height: 120px;              /* Set height to 120px for a square thumbnail */
-  object-fit: cover;          /* Ensure image fills the thumbnail proportionally */
-  border-radius: 10px;        /* Optional: rounded corners */
+  width: 80px;                /* Thumbnail width */
+  height: 80px;               /* Thumbnail height */
+  object-fit: cover;          /* Ensures image fits proportionally */
+  border-radius: 50%;         /* Optional: round the thumbnail */
   margin-bottom: 1rem;        /* Space below the image */
 }
 
 /* Description Styling */
 .service-card h3 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #00509E;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 
 .service-card p {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #666666;
   margin-top: 0.5rem;
 }

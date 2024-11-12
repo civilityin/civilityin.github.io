@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Civil Engineering Help Desk</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
     <style>
         /* General Styles */
         * {
@@ -12,51 +16,58 @@
             padding: 0;
         }
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9fb;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #e0f7fa, #e0e0e0);
             color: #333;
             line-height: 1.6;
+            overflow-x: hidden;
         }
 
         /* Header and Navigation */
         header {
-            background-color: #003366;
-            color: #fff;
-            padding: 1.5rem;
+            background-color: #00796b;
+            color: #ffffff;
+            padding: 2rem;
             text-align: center;
-            position: relative;
+            border-bottom: 3px solid #004d40;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         header h1 {
-            font-size: 2.5em;
-            margin-bottom: 0.5em;
+            font-weight: 600;
+            font-size: 2.8em;
+            margin-bottom: 0.3em;
+        }
+        header p {
+            font-weight: 300;
+            font-size: 1.2em;
         }
         nav {
             display: flex;
             justify-content: center;
-            background-color: #004080;
+            background-color: #004d40;
             padding: 1rem;
         }
         nav a {
-            color: #fff;
+            color: #e0f7fa;
             margin: 0 15px;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 500;
             transition: color 0.3s;
         }
         nav a:hover {
-            color: #80b3ff;
+            color: #ffffff;
         }
         .hamburger {
             display: none;
             font-size: 1.5rem;
             cursor: pointer;
-            color: #fff;
+            color: #ffffff;
             position: absolute;
             top: 20px;
             right: 20px;
         }
 
-        /* Sections */
+        /* Container and Sections */
         .container {
             max-width: 1200px;
             margin: 20px auto;
@@ -67,29 +78,31 @@
         }
         section {
             padding: 20px;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s;
         }
         section:hover {
             transform: translateY(-5px);
         }
         h2 {
-            color: #004080;
+            color: #004d40;
+            font-weight: 600;
             margin-bottom: 1rem;
         }
         .btn-primary {
             display: inline-block;
             padding: 10px 20px;
-            color: #fff;
-            background-color: #004080;
+            color: #ffffff;
+            background-color: #00796b;
             text-decoration: none;
             border-radius: 5px;
+            font-weight: 500;
             transition: background 0.3s;
         }
         .btn-primary:hover {
-            background-color: #003366;
+            background-color: #004d40;
         }
 
         /* Responsive Layout */
@@ -106,6 +119,7 @@
             }
         }
     </style>
+    
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const hamburger = document.querySelector('.hamburger');

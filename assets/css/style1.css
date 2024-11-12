@@ -1,66 +1,4 @@
-/* General Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Arial', sans-serif;
-  line-height: 1.6;
-  color: #333333;
-  background-color: #F9F9F9;
-}
-
-/* Navbar Styling */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background: #00509E;
-  color: #ffffff;
-}
-
-.navbar a {
-  color: #ffffff;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-}
-
-.navbar .cta-button {
-  background-color: #FF6700;
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  color: #ffffff;
-}
-
-/* Header with Background Image */
-.header {
-  background-image: url('../img/construction-bg.jpg');
-  background-size: cover;
-  background-position: center;
-  color: #ffffff;
-  text-align: center;
-  padding: 5rem 2rem;
-}
-
-.header-content h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-.header-content p {
-  font-size: 1.2rem;
-  margin-bottom: 1.5rem;
-}
-
-.cta-button.large {
-  padding: 0.75rem 1.5rem;
-}
-
-/* Services Section */
+/* Services Section with Standard Image Sizing */
 .services {
   padding: 4rem 2rem;
   background-color: #F9F9F9;
@@ -87,41 +25,13 @@ body {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
+/* Standard Image Size */
 .service-image {
   width: 100%;
+  max-width: 300px;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover; /* Ensures the image scales proportionally */
   border-radius: 10px;
   margin-bottom: 1rem;
-}
-
-.service-card h3 {
-  font-size: 1.5rem;
-  color: #00509E;
-  margin-bottom: 0.5rem;
-}
-
-.service-card p {
-  font-size: 1rem;
-  color: #666666;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 1.5rem;
-  background: #00509E;
-  color: #ffffff;
-}
-
-.footer-content p {
-  margin-bottom: 0.5rem;
-}
-
-.footer-content .social-links a {
-  color: #ffffff;
-  text-decoration: none;
-  margin: 0 0.5rem;
-}
-
-.footer-content .social-links a:hover {
-  color: #FF6700;
 }

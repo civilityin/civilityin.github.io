@@ -3,55 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Civility</title>
+    <title>Civil Engineering Help Desk</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #e6f2ff;
+            background-color: #f4f4f9;
             color: #333;
         }
         header {
             background-color: #004080;
             color: #fff;
-            padding: 1rem;
+            padding: 1.5rem;
             text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
         }
         .container {
-            max-width: 800px;
+            max-width: 1200px;
             margin: 20px auto;
             padding: 20px;
-            text-align: center;
         }
         nav {
-            margin-top: 20px;
+            text-align: center;
+            margin-top: 10px;
+            background-color: #004080;
+            padding: 1rem;
         }
         nav a {
-            margin: 0 15px;
+            margin: 0 20px;
             text-decoration: none;
-            color: #004080;
+            color: #fff;
+            font-weight: bold;
         }
         nav a:hover {
-            color: #007bff;
+            color: #80b3ff;
+        }
+        section {
+            padding: 20px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .about, .services, .projects, .testimonials, .contact {
+            text-align: center;
+        }
+        h2 {
+            color: #004080;
+        }
+        .service, .project, .testimonial {
+            margin: 20px 0;
+        }
+        .testimonial {
+            font-style: italic;
+            color: #666;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to the Civil Help Desk</h1>
+        <h1>Welcome to the Civil Engineering Help Desk</h1>
+        <p>Your go-to resource for civil engineering solutions, advice, and support.</p>
     </header>
     
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#services">Our Services</a>
+        <a href="#projects">Our Projects</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
     <div class="container">
-        <h2>Your Resource for Civil Engineering Solutions</h2>
-        <p>Whether you're a student, professional, or enthusiast, we're here to answer your civil engineering questions and guide you to success.</p>
+        <section id="about" class="about">
+            <h2>About Us</h2>
+            <p>We are a dedicated team of civil engineering professionals, here to help answer your questions, provide guidance, and share resources to help you excel in your civil engineering projects and studies.</p>
+        </section>
         
-        <nav>
-            <a href="#about">About Us</a>
-            <a href="#resources">Resources</a>
-            <a href="#faq">FAQs</a>
-            <a href="#contact">Contact Us</a>
-        </nav>
+        <section id="services" class="services">
+            <h2>Our Services</h2>
+            <div class="service">
+                <h3>Consultation</h3>
+                <p>Get expert advice on civil engineering projects, from site preparation to project management.</p>
+            </div>
+            <div class="service">
+                <h3>Structural Design Assistance</h3>
+                <p>Guidance in structural design, load analysis, and material selection to ensure project integrity and safety.</p>
+            </div>
+            <div class="service">
+                <h3>Educational Resources</h3>
+                <p>Access to articles, tutorials, and case studies to help students and professionals stay informed and inspired.</p>
+            </div>
+        </section>
+        
+        <section id="projects" class="projects">
+            <h2>Our Projects</h2>
+            <div class="project">
+                <h3>Residential Building Design</h3>
+                <p>We have assisted in the structural design and planning of residential projects to ensure stability and compliance.</p>
+            </div>
+            <div class="project">
+                <h3>Infrastructure Development</h3>
+                <p>Support for infrastructure projects like roadways, bridges, and drainage systems, ensuring long-term durability and safety.</p>
+            </div>
+        </section>
+        
+        <section id="testimonials" class="testimonials">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonial">
+                <p>"The Civil Engineering Help Desk provided invaluable insights for our project. Their team is knowledgeable and professional."</p>
+                <p>- Ramesh Thakur , Project Manager</p>
+            </div>
+            <div class="testimonial">
+                <p>"I found exactly what I needed for my thesis research. The resources and advice were top-notch!"</p>
+                <p>- Abhinav , Engineering Student</p>
+            </div>
+        </section>
+        
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <p>Have questions or need assistance? Feel free to reach out to us for support and guidance.</p>
+            <p>Email: <a href="mailto:info.civility@gmail.com">contact@civilhelpdesk.com</a></p>
+            <p>Phone: +1 (555) 123-4567</p>
+        </section>
     </div>
+
+    <footer>
+        <p>&copy; 2024 Civil Engineering Help Desk. All rights reserved.</p>
+    </footer>
 </body>
 </html>

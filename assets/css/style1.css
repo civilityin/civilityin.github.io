@@ -7,7 +7,7 @@ body {
     color: #333;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     color: #00509E;
 }
 
@@ -18,7 +18,7 @@ a {
 button {
     background-color: #00509E;
     color: white;
-    padding: 10px 20px;
+    padding: 12px 25px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -32,7 +32,7 @@ button:hover {
 .hero {
     background-color: #003366;
     color: white;
-    padding: 50px 2rem;
+    padding: 60px 2rem;
     text-align: center;
 }
 
@@ -47,33 +47,39 @@ button:hover {
 }
 
 .hero .btn-primary {
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding: 15px 30px;
 }
 
-/* About Us Section */
-.about-us {
+/* Company Story Section */
+.company-story {
     padding: 4rem 2rem;
     background-color: #ffffff;
     text-align: center;
 }
 
-.about-us h2 {
-    font-size: 2rem;
+.company-story h2 {
+    font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
-.about-content {
+.company-content {
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: 2rem;
 }
 
-.about-image {
+.company-image {
     width: 300px;
     height: auto;
     border-radius: 10px;
+}
+
+.story-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    max-width: 700px;
 }
 
 /* Services Section */
@@ -92,28 +98,33 @@ button:hover {
 .service-card {
     background-color: white;
     padding: 2rem;
-    width: 250px;
+    width: 270px;
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .service-card img {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     object-fit: cover;
     border-radius: 50%;
 }
 
 .service-card h3 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    margin-top: 10px;
+}
+
+.service-card p {
+    font-size: 1rem;
     margin-top: 10px;
 }
 
 /* Testimonials Section */
 .testimonials {
-    background-color: #ffffff;
     padding: 4rem 2rem;
+    background-color: #ffffff;
     text-align: center;
 }
 
@@ -127,7 +138,7 @@ button:hover {
 .testimonial-card {
     background-color: #f1f1f1;
     padding: 2rem;
-    width: 250px;
+    width: 300px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -147,16 +158,38 @@ button:hover {
     color: #333;
 }
 
-/* Contact Section */
-.contact {
+/* Call to Action Section */
+.cta {
     padding: 4rem 2rem;
     background-color: #003366;
     color: white;
     text-align: center;
 }
 
+.cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.cta p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta .btn-primary {
+    padding: 12px 30px;
+    font-size: 1.2rem;
+}
+
+/* Contact Section */
+.contact {
+    padding: 4rem 2rem;
+    background-color: #F9F9F9;
+    text-align: center;
+}
+
 .contact h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
@@ -169,14 +202,17 @@ button:hover {
 }
 
 .contact-form input, .contact-form textarea {
-    padding: 10px;
+    padding: 12px;
     border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 1rem;
 }
 
 .contact-form button {
-    align-self: flex-start;
-    padding: 12px 20px;
+    padding: 15px 20px;
     font-size: 1.1rem;
+    background-color: #00509E;
+    color: white;
+    border: none;
+    border-radius: 5px;
 }

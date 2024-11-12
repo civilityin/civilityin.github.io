@@ -5,9 +5,10 @@
 }
 
 .service-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
+  display: flex;               /* Flexbox for horizontal layout */
+  justify-content: space-around;  /* Evenly space items */
+  gap: 2rem;                   /* Space between items */
+  flex-wrap: wrap;             /* Allow wrapping to next line if space is tight */
 }
 
 .service-card {
@@ -15,9 +16,10 @@
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
   text-align: center;
   color: #333333;
+  width: 250px;                /* Fix width for each card */
+  transition: transform 0.3s;
 }
 
 .service-card:hover {
@@ -25,51 +27,24 @@
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Set image to exact 2x3 inch size (192x288 pixels) */
+/* Set image size to thumbnail (smaller size) */
 .service-image {
-  width: 192px;
-  height: 288px;
-  object-fit: cover;
-  border-radius: 10px;
-  margin-bottom: 1rem;
+  width: 120px;               /* Set width to 120px for a thumbnail */
+  height: 120px;              /* Set height to 120px for a square thumbnail */
+  object-fit: cover;          /* Ensure image fills the thumbnail proportionally */
+  border-radius: 10px;        /* Optional: rounded corners */
+  margin-bottom: 1rem;        /* Space below the image */
 }
 
-/* Hyperlink styling below image */
-.service-link {
-  display: inline-block;
-  margin-top: 0.5rem;
+/* Description Styling */
+.service-card h3 {
+  font-size: 1.5rem;
   color: #00509E;
-  text-decoration: none;
-  font-weight: bold;
+  margin-top: 1rem;
 }
 
-.service-link:hover {
-  color: #FF6700;
-  text-decoration: underline;
+.service-card p {
+  font-size: 1rem;
+  color: #666666;
+  margin-top: 0.5rem;
 }
-
-<div class="service-grid">
-  <!-- Service Card 1 -->
-  <div class="service-card">
-    <img src="img/design-consultation.jpg" alt="Design Consultation" class="service-image">
-    <h3>Design Consultation</h3>
-    <p>We provide customized design advice to align with your construction goals.</p>
-    <a href="design-consultation.html" class="service-link">Learn More</a>
-  </div>
-
-  <!-- Service Card 2 -->
-  <div class="service-card">
-    <img src="img/material-selection.jpg" alt="Material Selection" class="service-image">
-    <h3>Material Selection</h3>
-    <p>Choosing the right materials is crucial. We help with durable selections.</p>
-    <a href="material-selection.html" class="service-link">Learn More</a>
-  </div>
-
-  <!-- Service Card 3 -->
-  <div class="service-card">
-    <img src="img/project-planning.jpg" alt="Project Planning" class="service-image">
-    <h3>Project Planning</h3>
-    <p>We ensure every phase of your project runs smoothly with comprehensive planning.</p>
-    <a href="project-planning.html" class="service-link">Learn More</a>
-  </div>
-</div>

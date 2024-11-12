@@ -1,70 +1,61 @@
-/* Contact Section */
-#contact {
-  background: url('assets/images/contact-bg.jpg') no-repeat center center;
-  background-size: cover;
-  color: white;
+/* About Page Styling */
+#about {
+  background-color: #f7f7f7;
+  color: #333;
   padding: 80px 20px;
   text-align: center;
 }
 
-#contact h2 {
+#about h2 {
   font-size: 3rem;
-  font-weight: 600;
-  margin-bottom: 20px;
-  text-transform: uppercase;
+  font-weight: 700;
+  color: #2a5298;
+  margin-bottom: 30px;
 }
 
-#contact p {
-  font-size: 1.2rem;
-  font-weight: 300;
-  margin-bottom: 40px;
-}
-
-.contact-form {
-  background: rgba(0, 0, 0, 0.7);
-  padding: 40px;
-  border-radius: 10px;
-  max-width: 600px;
+.about-content {
+  max-width: 900px;
   margin: 0 auto;
 }
 
-.contact-form form {
+.about-details {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 40px;
 }
 
-.contact-form label {
-  font-size: 1.2rem;
+.detail {
+  width: 30%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.detail h3 {
+  font-size: 1.8rem;
+  color: #ffcd02;
   margin-bottom: 10px;
 }
 
-.contact-form input,
-.contact-form textarea {
-  padding: 15px;
-  font-size: 1rem;
-  margin-bottom: 20px;
-  border: none;
-  border-radius: 5px;
-  background-color: #fff;
-  color: #333;
-}
-
-.contact-form button {
-  padding: 15px;
-  background-color: #ffcd02;
-  border: none;
-  border-radius: 5px;
-  color: white;
+.detail p {
   font-size: 1.2rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  color: #666;
 }
 
-.contact-form button:hover {
-  background-color: #d1a100;
+.detail ul {
+  list-style: none;
+  padding-left: 0;
 }
 
-/* Footer */
+.detail ul li {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 5px;
+}
+
 footer {
   background-color: #2a5298;
   color: white;
